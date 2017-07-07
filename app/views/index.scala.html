@@ -27,10 +27,10 @@
             <div class="header">
                 <div class="cssmenu">
                     <ul>
-                        <li class="active"><a href="index.html">Bosh sahifa</a></li>
-                        <li class="has-sub"><a href="service.html">Virtual bozor</a></li>
-                        <li ><a href="about.html">Ro'yhatdan o'tish</a></li>
-                        <li class="last"><a href="contact.html">Biz bilan muloqot</a></li>
+                        <li class="active"><a href="@routes.Application.index()">Bosh sahifa</a></li>
+                        <li class="has-sub"><a href="#">Virtual bozor</a></li>
+                        <li ><a href="@routes.Application.registration()">Ro'yhatdan o'tish</a></li>
+                        <li class="last"><a href="#">Biz bilan muloqot</a></li>
                         <div class="clear"></div>
                     </ul>
                 </div>
@@ -46,24 +46,10 @@
     </div>
     <div class="wrap">
         <div class="wrapper">
-                <!-- start slider -->
-            <div class="fluid_container">
-                <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
-                    <div data-src=@routes.Assets.at("images/slider1.jpg")></div>
-                    <div data-src=@routes.Assets.at("images/slider2.jpg")></div>
-                    <div  data-src=@routes.Assets.at("images/slider3.jpg")></div>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
-    <div class="wrap">
-        <div class="wrapper">
             <div class="main_bg">
                 <div class="main">
                     <div class="content">
-                        <h2>The worlds largest former</h2>
-                        <a href="index.html"><h3>Agro's</h3></a>
+                        <img width="100%" src="@routes.Assets.at("images/exp/corn.png")" alt="">
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -74,7 +60,7 @@
         <div class="wrapper">
             <div class="main_bg1">
                 <div class="main">
-                    <h2 class="style">feaured services</h2>
+                    <h2 class="style">Export mahsulotlar</h2>
                     <div class="section group">
                         <div class="grid_1_of_3 images_1_of_3">
                             <div class="gallery">

@@ -11,5 +11,11 @@ class Application extends Controller {
   def registration = Action {
     Ok(views.html.registration())
   }
+  def login = Action {
+    Ok(views.html.login_form())
+  }
+  def personal = Action {
+    Ok(views.html.personal_account())
+  }
 
 }

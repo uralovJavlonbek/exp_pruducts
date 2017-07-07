@@ -20,33 +20,33 @@
                         <label for="galla"> G'alla</label>
                         <input type="checkbox" name="payment-method" value="tarvuz" id="tarvuz"/>
                         <label for="tarvuz">Tarvuz</label>
-                        <input type="checkbox" name="payment-method" value="nok" id="galla"/>
+                        <input type="checkbox" name="payment-method" value="nok" id="nok"/>
                         <label for="nok"> Nok</label>
-                        <input type="checkbox" name="payment-method" value="orik" id="paxta"/>
+                        <input type="checkbox" name="payment-method" value="orik" id="orik"/>
                         <label for="orik">O'rik</label>
                     </div>
                     <div class="col-third">
-                        <input type="checkbox" name="payment-method" value="qovun" id="galla"/>
+                        <input type="checkbox" name="payment-method" value="qovun" id="qovun"/>
                         <label for="qovun">Qovun</label>
-                        <input type="checkbox" name="payment-method" value="olma" id="galla"/>
+                        <input type="checkbox" name="payment-method" value="olma" id="olma"/>
                         <label for="olma">Olma</label>
-                        <input type="checkbox" name="payment-method" value="uzum" id="galla"/>
+                        <input type="checkbox" name="payment-method" value="uzum" id="uzum"/>
                         <label for="uzum"> Uzum</label>
-                        <input type="checkbox" name="payment-method" value="pamidor" id="galla"/>
-                        <label for="nok"> Pamidor</label>
-                        <input type="checkbox" name="payment-method" value="1" id="paxta"/>
+                        <input type="checkbox" name="payment-method" value="pamidor" id="pamidor"/>
+                        <label for="pamidor"> Pamidor</label>
+                        <input type="checkbox" name="payment-method" value="1" id="1"/>
                         <label for="1">Paxta</label>
                     </div>
                     <div class="col-third">
-                        <input type="checkbox" name="payment-method" value="2" id="galla"/>
+                        <input type="checkbox" name="payment-method" value="2" id="2"/>
                         <label for="2"> G'alla</label>
-                        <input type="checkbox" name="payment-method" value="3" id="paxta"/>
+                        <input type="checkbox" name="payment-method" value="3" id="3"/>
                         <label for="3">Tarvuz</label>
-                        <input type="checkbox" name="payment-method" value="4" id="galla"/>
+                        <input type="checkbox" name="payment-method" value="4" id="4"/>
                         <label for="4">Qovun</label>
-                        <input type="checkbox" name="payment-method" value="5" id="galla"/>
+                        <input type="checkbox" name="payment-method" value="5" id="5"/>
                         <label for="5">Olma</label>
-                        <input type="checkbox" name="payment-method" value="6" id="galla"/>
+                        <input type="checkbox" name="payment-method" value="6" id="6"/>
                         <label for="6"> Uzum</label>
                     </div>
                 </div>
@@ -106,43 +106,17 @@
                 </div>
             </div>
             <div class="row">
-                <h4>Payment Details</h4>
-                <div class="input-group">
-                    <input type="radio" name="payment-method" value="card" id="payment-method-card" checked="true"/>
-                    <label for="payment-method-card"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
-                    <input type="radio" name="payment-method" value="paypal" id="payment-method-paypal"/>
-                    <label for="payment-method-paypal"> <span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
-                </div>
-                <div class="input-group input-group-icon">
-                    <input type="text" placeholder="Card Number"/>
-                    <div class="input-icon"><i class="fa fa-credit-card"></i></div>
-                </div>
-                <div class="col-half">
-                    <div class="input-group input-group-icon">
-                        <input type="text" placeholder="Card CVC"/>
-                        <div class="input-icon"><i class="fa fa-user"></i></div>
-                    </div>
-                </div>
-                <div class="col-half">
-                    <div class="input-group">
-                        <select>
-                            <option>01 Jan</option>
-                            <option>02 Jan</option>
-                        </select>
-                        <select>
-                            <option>2015</option>
-                            <option>2016</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
                 <h4>Terms and Conditions</h4>
                 <div class="input-group">
                     <input type="checkbox" id="terms"/>
                     <label for="terms">
-                        I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+                        Tizim foyladanish qoidalari bilan tanishdim va roziman.</label>
                 </div>
+            </div>
+            <div align="center">
+                <a href="@routes.Application.login()">
+                    <button type="button" class="btn btn-success">Shaxsiy cabinet yaratish</button>
+                </a>
             </div>
         </form>
     </div>
