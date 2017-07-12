@@ -1,5 +1,5 @@
 @main("Ro'yhatdan o'tish") {
-
+  <script src='@controllers.routes.Assets.versioned("javascript/registration.js")'></script>
   <div class="container">
     <form class="">
       <div class="row margin-left">
@@ -7,13 +7,14 @@
         <br>
         <div class="input-group input-group-icon col-half">
           <select name="direction" id="">
-            <option value="0">Sotuvchi</option>
-            <option value="1">Xaridor</option>
+            <option value="0" data-bind="value: vm.direction">Sotuvchi</option>
+            <option value="1" data-bind="value: vm.direction">Xaridor</option>
           </select>
+          <button type="button" class="btn btn-sm btn-success" data-bind="click: vm.showDirection">press</button>
         </div>
         <h4>Mahsulot turini tanlang</h4>
         <br>
-        <div class="row">
+        <div class="row" data-bind="selectProducts">
           <div class="col-third">
             <input type="checkbox" name="payment-method" value="paxta" id="paxta"/>
             <label for="paxta">Paxta</label>
@@ -57,7 +58,7 @@
         <h4>Umumiy ma'lumotlar</h4>
         <br>
         <div class="input-group input-group-icon">
-          <input type="text" placeholder="I.Sh.O"/>
+          <input type="text" placeholder="I.Sh.O" data-bind="fullName"/>
           <div class="input-icon"><i class="fa fa-user"></i></div>
         </div>
         <div class="input-group input-group-icon">
@@ -123,5 +124,6 @@
     </form>
   </div>
 
-  <script src="@routes.Assets.at("registration/js/index.js")"></script>
+
+  @*<script src="@routes.Assets.at("registration/js/index.js")"></script>*@
 }

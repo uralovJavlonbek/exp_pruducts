@@ -2,7 +2,9 @@ name := "exp_pruducts"
 
 version := "1.0"
 
-lazy val `knockoutcoffee` = (project in file(".")).enablePlugins(PlayScala)
+lazy val `exp_pruducts` = (project in file(".")).enablePlugins(PlayScala)
+
+//lazy val root = (project in file(".")).enablePlugins(SbtWeb)
 
 scalaVersion := "2.11.7"
 
@@ -42,7 +44,7 @@ libraryDependencies ++= Seq(
   "org.postgresql" % "postgresql" % "9.4-1202-jdbc41",
   "org.webjars" % "webjars-play_2.11" % "2.4.0-1",
   "org.webjars" % "knockout" % "3.3.0",
-  "org.webjars" % "jquery" % "1.11.3",
+  "org.webjars" % "jquery" % "3.2.1",
   "org.webjars" % "requirejs" % "2.1.20",
   "org.webjars" % "bootstrap" % "3.3.4",
   "org.webjars" % "bootstrap-select" % "1.7.3-1",
@@ -55,4 +57,7 @@ libraryDependencies ++= Seq(
   "org.webjars.bower" % "font-awesome" % "4.7.0"
 )
 
+
+pipelineStages := Seq(rjs, digest, gzip)
 routesGenerator := InjectedRoutesGenerator
+
