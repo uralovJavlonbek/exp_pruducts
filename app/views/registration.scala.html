@@ -1,125 +1,127 @@
 @main("Ro'yhatdan o'tish") {
 
-    <div class="container">
-        <form>
-            <div class="row">
-                <h4>Faoliyatingizni tanlang</h4>
-                <br>
-                <div class="input-group input-group-icon">
-                    <select class="" name="direction" id="">
-                        <option value="0">Sotuvchi</option>
-                        <option value="1">Xaridor</option>
-                    </select>
-                </div>
-                <h4>Mahsulot turini tanlang</h4>
-                <div class="row">
-                    <div class="col-third">
-                        <input type="checkbox" name="payment-method" value="paxta" id="paxta"/>
-                        <label for="paxta">Paxta</label>
-                        <input type="checkbox" name="payment-method" value="galla" id="galla"/>
-                        <label for="galla"> G'alla</label>
-                        <input type="checkbox" name="payment-method" value="tarvuz" id="tarvuz"/>
-                        <label for="tarvuz">Tarvuz</label>
-                        <input type="checkbox" name="payment-method" value="nok" id="nok"/>
-                        <label for="nok"> Nok</label>
-                        <input type="checkbox" name="payment-method" value="orik" id="orik"/>
-                        <label for="orik">O'rik</label>
-                    </div>
-                    <div class="col-third">
-                        <input type="checkbox" name="payment-method" value="qovun" id="qovun"/>
-                        <label for="qovun">Qovun</label>
-                        <input type="checkbox" name="payment-method" value="olma" id="olma"/>
-                        <label for="olma">Olma</label>
-                        <input type="checkbox" name="payment-method" value="uzum" id="uzum"/>
-                        <label for="uzum"> Uzum</label>
-                        <input type="checkbox" name="payment-method" value="pamidor" id="pamidor"/>
-                        <label for="pamidor"> Pamidor</label>
-                        <input type="checkbox" name="payment-method" value="1" id="1"/>
-                        <label for="1">Paxta</label>
-                    </div>
-                    <div class="col-third">
-                        <input type="checkbox" name="payment-method" value="2" id="2"/>
-                        <label for="2"> G'alla</label>
-                        <input type="checkbox" name="payment-method" value="3" id="3"/>
-                        <label for="3">Tarvuz</label>
-                        <input type="checkbox" name="payment-method" value="4" id="4"/>
-                        <label for="4">Qovun</label>
-                        <input type="checkbox" name="payment-method" value="5" id="5"/>
-                        <label for="5">Olma</label>
-                        <input type="checkbox" name="payment-method" value="6" id="6"/>
-                        <label for="6"> Uzum</label>
-                    </div>
-                </div>
+  <div class="container">
+    <form class="">
+      <div class="row margin-left">
+        <h4>Faoliyatingizni tanlang</h4>
+        <br>
+        <div class="input-group input-group-icon col-half">
+          <select name="direction" id="">
+            <option value="0">Sotuvchi</option>
+            <option value="1">Xaridor</option>
+          </select>
+        </div>
+        <h4>Mahsulot turini tanlang</h4>
+        <br>
+        <div class="row">
+          <div class="col-third">
+            <input type="checkbox" name="payment-method" value="paxta" id="paxta"/>
+            <label for="paxta">Paxta</label>
+            <input type="checkbox" name="payment-method" value="galla" id="galla"/>
+            <label for="galla"> G'alla</label>
+            <input type="checkbox" name="payment-method" value="tarvuz" id="tarvuz"/>
+            <label for="tarvuz">Tarvuz</label>
+            <input type="checkbox" name="payment-method" value="nok" id="nok"/>
+            <label for="nok"> Nok</label>
+            <input type="checkbox" name="payment-method" value="orik" id="orik"/>
+            <label for="orik">O'rik</label>
+          </div>
+          <div class="col-third">
+            <input type="checkbox" name="payment-method" value="qovun" id="qovun"/>
+            <label for="qovun">Qovun</label>
+            <input type="checkbox" name="payment-method" value="olma" id="olma"/>
+            <label for="olma">Olma</label>
+            <input type="checkbox" name="payment-method" value="uzum" id="uzum"/>
+            <label for="uzum"> Uzum</label>
+            <input type="checkbox" name="payment-method" value="pamidor" id="pamidor"/>
+            <label for="pamidor"> Pamidor</label>
+            <input type="checkbox" name="payment-method" value="1" id="1"/>
+            <label for="1">Paxta</label>
+          </div>
+          <div class="col-third">
+            <input type="checkbox" name="payment-method" value="2" id="2"/>
+            <label for="2"> G'alla</label>
+            <input type="checkbox" name="payment-method" value="3" id="3"/>
+            <label for="3">Tarvuz</label>
+            <input type="checkbox" name="payment-method" value="4" id="4"/>
+            <label for="4">Qovun</label>
+            <input type="checkbox" name="payment-method" value="5" id="5"/>
+            <label for="5">Olma</label>
+            <input type="checkbox" name="payment-method" value="6" id="6"/>
+            <label for="6"> Uzum</label>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <h4>Umumiy ma'lumotlar</h4>
+        <br>
+        <div class="input-group input-group-icon">
+          <input type="text" placeholder="I.Sh.O"/>
+          <div class="input-icon"><i class="fa fa-user"></i></div>
+        </div>
+        <div class="input-group input-group-icon">
+          <input type="email" placeholder="Elektron manzil"/>
+          <div class="input-icon"><i class="fa fa-envelope"></i></div>
+        </div>
+        <div class="input-group input-group-icon">
+          <input type="tel" placeholder="Telefon raqam"/>
+          <div class="input-icon"><i class="fa fa-phone"></i></div>
+        </div>
+        <div class="input-group input-group-icon">
+          <input type="text" placeholder="Login"/>
+          <div class="input-icon"><i class="fa fa-user"></i></div>
+        </div>
+        <div class="input-group input-group-icon">
+          <input type="password" placeholder="Parol"/>
+          <div class="input-icon"><i class="fa fa-key"></i></div>
+        </div>
+        <div class="input-group input-group-icon">
+          <input type="password" placeholder="Parolni yana bir bor kiriting"/>
+          <div class="input-icon"><i class="fa fa-key"></i></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-half">
+          <h4>Passpot ma'lumotlar</h4>
+          <div class="input-group">
+            <div class="col-third">
+              <input type="text" placeholder="Seriya"/>
             </div>
-            <div class="row">
-                <h4>Umumiy ma'lumotlar</h4>
-                <br>
-                <div class="input-group input-group-icon">
-                    <input type="text" placeholder="I.Sh.O"/>
-                    <div class="input-icon"><i class="fa fa-user"></i></div>
-                </div>
-                <div class="input-group input-group-icon">
-                    <input type="email" placeholder="Elektron manzil"/>
-                    <div class="input-icon"><i class="fa fa-envelope"></i></div>
-                </div>
-                <div class="input-group input-group-icon">
-                    <input type="tel" placeholder="Telefon raqam"/>
-                    <div class="input-icon"><i class="fa fa-phone"></i></div>
-                </div>
-                <div class="input-group input-group-icon">
-                    <input type="text" placeholder="Login"/>
-                    <div class="input-icon"><i class="fa fa-user"></i></div>
-                </div>
-                <div class="input-group input-group-icon">
-                    <input type="password" placeholder="Parol"/>
-                    <div class="input-icon"><i class="fa fa-key"></i></div>
-                </div>
-                <div class="input-group input-group-icon">
-                    <input type="password" placeholder="Parolni yana bir bor kiriting"/>
-                    <div class="input-icon"><i class="fa fa-key"></i></div>
-                </div>
+            <div class="col-half">
+              <input type="text" placeholder="Raqam"/>
             </div>
-            <div class="row">
-                <div class="col-half">
-                    <h4>Passpot ma'lumotlar</h4>
-                    <div class="input-group">
-                        <div class="col-third">
-                            <input type="text" placeholder="Seriya"/>
-                        </div>
-                        <div class="col-half">
-                            <input type="text" placeholder="Raqam"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-half">
-                    <h4>Address</h4>
-                    <div class="input-group">
-                        <input type="text" placeholder="Mamlakat,Viloyat,Shahar..."/>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <h4>Xisob raqamingiz</h4>
-                <div class="input-group input-group-icon">
-                    <input type="number" placeholder="Xisob raqam">
-                    <div class="input-icon"><i class="fa fa-bank"></i></div>
-                </div>
-            </div>
-            <div class="row">
-                <h4>Terms and Conditions</h4>
-                <div class="input-group">
-                    <input type="checkbox" id="terms"/>
-                    <label for="terms">
-                        Tizim foyladanish qoidalari bilan tanishdim va roziman.</label>
-                </div>
-            </div>
-            <div align="center">
-                <a href="@routes.Application.login()">
-                    <button type="button" class="btn btn-success">Shaxsiy cabinet yaratish</button>
-                </a>
-            </div>
-        </form>
-    </div>
+          </div>
+        </div>
+        <div class="col-half">
+          <h4>Address</h4>
+          <div class="input-group">
+            <input type="text" placeholder="Mamlakat,Viloyat,Shahar..."/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h4>Xisob raqamingiz</h4>
+        <div class="input-group input-group-icon">
+          <input type="number" placeholder="Xisob raqam">
+          <div class="input-icon"><i class="fa fa-bank"></i></div>
+        </div>
+      </div>
+      <div class="row">
+        <h4>Terms and Conditions</h4>
+        <div class="input-group">
+          <input type="checkbox" id="terms"/>
+          <label for="terms">
+            Tizim foyladanish qoidalari bilan tanishdim va roziman.</label>
+        </div>
+      </div>
+      <div align="center">
+        <a href="@routes.Application.login()">
+          <button type="button" class="btn btn-success">Shaxsiy cabinet yaratish</button>
+        </a>
+      </div>
+    </form>
+  </div>
 
-    <script src="@routes.Assets.at("registration/js/index.js")"></script>
+  <script src="@routes.Assets.at("registration/js/index.js")"></script>
 }
