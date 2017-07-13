@@ -1,10 +1,25 @@
 $ ->
 
   vm = ko.mapping.fromJS
-    direction: []
+    client:
+      directions : ["So'tuvchi","Xaridor"]
+      selected:
+        direction: ''
+      product: []
+      clientFullName : ''
+      clientEmail: ''
+      clientPhone: ''
+      clientLogin: ''
+      clientPassword: ''
+      clientConfirmationPassword: ''
+      clientPS: ''
+      clientPN: ''
+      clientAddress: ''
+      clientAccount: ''
+      clientTermCondition: ''
 
-  vm.showDirection = ->
-    console.log(vm.direction([]))
+  vm.showAllInformation = ->
+    console.log(vm.client)
 
   ko.applyBindings {vm}
 
