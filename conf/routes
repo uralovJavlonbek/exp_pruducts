@@ -5,6 +5,7 @@
 # Home page
 GET     /                           controllers.Application.index
 GET     /registration               controllers.Application.registration
+POST    /registration               @controllers.RegistrationController.registration
 GET     /login                      controllers.Application.login
 GET     /personal                   controllers.Application.personal
 

@@ -4,7 +4,8 @@ version := "1.0"
 
 lazy val `exp_pruducts` = (project in file(".")).enablePlugins(PlayScala)
 
-//lazy val root = (project in file(".")).enablePlugins(SbtWeb)
+includeFilter in (Assets, LessKeys.less) := "*.less"
+excludeFilter in (Assets, LessKeys.less) := "_*.less"
 
 scalaVersion := "2.11.7"
 
@@ -57,6 +58,7 @@ libraryDependencies ++= Seq(
   "org.webjars.bower" % "font-awesome" % "4.7.0"
 )
 
+LessKeys.compress in Assets := true
 
 pipelineStages := Seq(rjs, digest, gzip)
 routesGenerator := InjectedRoutesGenerator

@@ -1,7 +1,8 @@
 @main("Ro'yhatdan o'tish") {
   <script src='@controllers.routes.Assets.versioned("javascript/registration.js")'></script>
+
   <div class="container">
-    <form class="">
+    <form class="" data-bind="submit: vm.onAddFormSubmit">
       <div class="row margin-left">
         <h4>Faoliyatingizni tanlang</h4>
         <br>
@@ -63,7 +64,7 @@
           <div class="input-icon"><i class="fa fa-envelope"></i></div>
         </div>
         <div class="input-group input-group-icon">
-          <input type="tel" placeholder="Telefon raqam" data-bind="value: vm.client.clientPhone"/>
+          <input type="number" placeholder="Telefon raqam" data-bind="value: vm.client.clientPhone"/>
           <div class="input-icon"><i class="fa fa-phone"></i></div>
         </div>
         <div class="input-group input-group-icon">
@@ -84,10 +85,10 @@
           <h4>Passpot ma'lumotlar</h4>
           <div class="input-group">
             <div class="col-third">
-              <input type="text" placeholder="Seriya" data-bind="value: vm.client.clientPS"/>
+              <input type="text"  placeholder="AZ" data-bind="value: vm.client.clientPS" pattern="^[a-zA-Z].*" minlength="2" maxlength="2" title="Iltimos lotin xarflarini kiriting" />
             </div>
             <div class="col-half">
-              <input type="text" placeholder="Raqam" data-bind="value: vm.client.clientPN"/>
+              <input type="text" placeholder="1234567" data-bind="value: vm.client.clientPN" pattern="^[0-9].*" minlength="7" maxlength="7" title="Iltimos faqat son kiriting"/>
             </div>
           </div>
         </div>
@@ -101,25 +102,24 @@
       <div class="row">
         <h4>Xisob raqamingiz</h4>
         <div class="input-group input-group-icon">
-          <input type="number" placeholder="Xisob raqam" data-bind="value: vm.client.clientAccount"/>
+          <input type="text" placeholder="Xisob raqam" data-bind="value: vm.client.clientAccount" pattern="^[0-9].*" minlength="18" maxlength="20"/>
           <div class="input-icon"><i class="fa fa-bank"></i></div>
         </div>
       </div>
       <div class="row">
         <h4>Terms and Conditions</h4>
         <div class="input-group">
-          <input type="checkbox" id="terms" data-bind="value: vm.client.clientTermCondition"/>
+          <input type="checkbox" id="terms" data-bind="checked: vm.client.clientTermCondition"/>
           <label for="terms">
             Tizim foyladanish qoidalari bilan tanishdim va roziman.</label>
         </div>
       </div>
       <div align="center">
-        <a href="@routes.Application.login()">
-          <button type="button" class="btn btn-success">Shaxsiy cabinet yaratish</button>
-        </a>
+        @*<a href="@routes.Application.login()">*@
+          <button type="submit" class="btn btn-success">Shaxsiy cabinet yaratish</button>
+        @*</a>*@
       </div>
     </form>
-    <button type="button" data-bind="vm.showAllInformation">show</button>
   </div>
 
 
